@@ -1,0 +1,25 @@
+body {
+  text-align:center;
+}
+
+textarea, #generate {
+  margin:5px;
+}
+
+#recommendations {
+  width:600px;
+  margin:10px auto 0 auto;
+  text-align:left;
+  position:relative;
+  left:100px;
+}
+
+span {
+  display:inline-block;
+  width:50px;
+  text-align:center;
+}
+
+input[type=text] {
+  width:40px;
+}

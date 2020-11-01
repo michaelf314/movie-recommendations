@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <textarea rows="10" cols="40" id="favorites" placeholder="Enter IMDb URLs of your favorite movies (use at least 10 for good results)"></textarea>
+    <textarea rows="10" cols="40" id="exclude" placeholder="Exclude movies you've already seen by entering the IMDb URLs here (optional)"></textarea>
+    <br><input type="button" id="generate" value="Generate recommendations">
+    <br>Display IMDb URLs only? <input type="checkbox" id="urlsonly">
+    <br>Smaller = more obscure recommendations <input type="text" id="obscurity" value="1.2">
+    <br>Smaller = more balanced list weights <input type="text" id="balanced" value="1">
+    <br><div id="recommendations"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

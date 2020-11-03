@@ -1,4 +1,4 @@
-# Movie Recommendations
+# [Movie Recommendations](https://github.com/michaelf314/movie-recommendations)
 
 Enter your favorite movies (as IMDb URLs) in the left box. Exclude movies you've already seen by entering them (as IMDb URLs) in the right box.  If you have an IMDb list, you can export it and copy/paste the URLs.
 

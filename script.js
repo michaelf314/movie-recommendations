@@ -97,7 +97,7 @@ function getSimilarity(myList, list) {
 function calculateScores() {
   scores = [];
   for (i in weighted)
-    scores.push([i, weighted[i] ** obscurity.value / (unweighted[i]+2)]);
+    scores.push([i, weighted[i] ** obscurity.value / (unweighted[i]+3)]);
   scores.sort((a, b) => {
     if (a[1] == b[1]) return 0;
     if (a[1] < b[1]) return 1;

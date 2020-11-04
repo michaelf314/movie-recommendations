@@ -47,7 +47,7 @@ async function getTitles() {
 async function getLists() {
   let allLists;
   await fetch('alllists.txt').then(r => r.text()).then((r) => allLists = r);
-  allLists = allLists.split(/(\r?\n){2}/);
+  allLists = allLists.split(/\r?\n\r?\n/);
   for (list of allLists) {
     if (list) {
       let set = new Set();
@@ -91,7 +91,7 @@ function countVotes() {
 
 function getSimilarity(myList, list) {
   let overlap = myList.filter(x => list.has(x)).length;
-  return overlap / list.size ** .5;
+  return overlap / list.size ** Math.min(.5, .35 + .015 * myList.length);
 }
 
 function calculateScores() {

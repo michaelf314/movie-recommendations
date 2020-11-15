@@ -46,7 +46,7 @@ async function getTitles() {
 
 async function getLists() {
   let allLists;
-  await fetch('alllists.txt').then(r => r.text()).then((r) => allLists = r);
+  await fetch('alllists.txt').then((r) => r.text()).then((r) => allLists = r);
   allLists = allLists.split(/\r?\n\r?\n/);
   for (list of allLists) {
     if (list) {

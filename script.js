@@ -8,8 +8,8 @@ const recommendations = document.querySelector('#recommendations');
 
 let lists = [];
 let titles = {};
-let myList = {};
-let excludeList = {};
+let myList;
+let excludeList;
 let unweighted = {};
 let weighted = {};
 let scores = [];

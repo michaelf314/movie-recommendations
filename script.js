@@ -62,10 +62,10 @@ async function getLists() {
 
 function getInput(textarea) {
   let set = new Set();
-  let matches = textarea.value.match(/https?:\/\/www.imdb.com\/title\/tt.{7,8}\//g);
+  let matches = textarea.value.match(/tt\d{7,8}/g);
   if (matches) {
     for (i of matches)
-      set.add(i.replace('http:', 'https:'));
+      set.add('https://www.imdb.com/title/'+i+'/');
   }
   return set;
 }
